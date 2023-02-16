@@ -19,3 +19,14 @@ function amountscrolled(){
 window.addEventListener("scroll", function(){
     amountscrolled()
 }, false)
+const toggle = document.getElementById("toggle");
+const menu = document.getElementById("hamburg");
+const nav = document.getElementById("nav");
+menu.addEventListener("click",function() {
+    toggle.style.display = "block";
+    nav.style.display = "none";
+});
+toggle.addEventListener("click",function() {
+    nav.style.display = "flex";
+    toggle.style.display = "none";
+});
